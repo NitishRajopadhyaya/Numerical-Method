@@ -43,14 +43,14 @@ using namespace std;
                 }
         }
 
-X[n-1] = arr1[n-1][n] / arr1[n-1][n-1];
+// X[n-1] = arr1[n-1][n] / arr1[n-1][n-1];
 
 double sum;
 
-        for(int i = n-2 ; i>=0 ;i--)
+        for(int i = n-1 ; i>=0 ;i--)
         {
             sum = 0 ;
-            for(int j=i+1 ; j<n+1 ;j++)
+            for(int j=i+1 ; j<n ;j++)
              {
                    sum = sum + (arr1[i][j] * X[j]);
              } 
